@@ -1,0 +1,20 @@
+<template>
+    <lightning-card icon-name="standard:account">
+      <lightning-record-edit-form record-id={recordId} object-api-name="Customer_Report__c" onsuccess={handleSuccess}  >
+        <lightning-input-field field-name="Customer_Report__c" value={Customer_Report} onchange={handleChange} required ></lightning-input-field>
+        <lightning-input-field field-name="Account__c" value={Account} required ></lightning-input-field> 
+        <lightning-input-field field-name="Data_Source__c" value={Data_Source} required ></lightning-input-field>
+        <lightning-input-field field-name="Frequency__c" value={Frequency} required ></lightning-input-field>
+        <lightning-input-field field-name="FTP__c" value={FTPp} required ></lightning-input-field>
+        <lightning-input-field field-name="Note__c" value={Note} required ></lightning-input-field>
+        <lightning-input-field field-name="Parcel__c" value={Parcel} required ></lightning-input-field>
+        <lightning-input-field field-name="Schedule__c" value={Schedule} required ></lightning-input-field>
+        <lightning-input-field field-name="Template__c" value={Template} required ></lightning-input-field>
+        <lightning-input-field field-name="Title__c" value={Title} required ></lightning-input-field>
+        <lightning-input-field field-name="Code__c" value={Code} required ></lightning-input-field>
+        <lightning-input-field field-name="External_Id__c" value={External} required ></lightning-input-field>
+        <lightning-input-field field-name="DataChange__c" value={DataChange} required ></lightning-input-field>
+        <lightning-button variant="brand" type="submit" name="save" label="Create/Update Report" ></lightning-button>
+    </lightning-record-edit-form>
+  </lightning-card>
+</template>
